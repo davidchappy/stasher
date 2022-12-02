@@ -21,7 +21,7 @@ export default function Avatar({
 
   useEffect(() => {
     if (url) downloadImage(url)
-  }, [url])
+  }, [url, downloadImage])
 
   async function downloadImage(path: string) {
     try {
