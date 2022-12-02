@@ -8,10 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "hooks": {
-    "prebuild": "yarn install --production",
-    "postdeploy": "yarn install --offline"
-  },
   "dependencies": {
     "@types/node": "18.11.10",
     "@types/react": "18.0.26",
