@@ -4,7 +4,7 @@ import {
   useSupabaseClient,
   Session
 } from "@supabase/auth-helpers-react"
-import { Database } from "../utils/database.types"
+import { Database } from "../utils/database"
 type Profiles = Database["public"]["Tables"]["profiles"]["Row"]
 import Avatar from "./Avatar"
 
@@ -15,7 +15,7 @@ export default function Account({ session }: { session: Session }) {
   const [username, setUsername] = useState<Profiles["username"]>(null)
   const [website, setWebsite] = useState<Profiles["website"]>(null)
   const [avatar_url, setAvatarUrl] = useState<Profiles["avatar_url"]>(null)
-  const [fullName, setFullName] = useState<Profiles["full_name"]>(null)
+  const [fullName, setFullName] = useState<Profiles["full_name"]>(undefined)
 
   useEffect(() => {
     getProfile()

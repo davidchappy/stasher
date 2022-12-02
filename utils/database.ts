@@ -14,7 +14,7 @@ export interface Database {
           id: string
           updated_at: string | null
           username: string | null
-          full_name: string | null
+          full_name: string | undefined
           avatar_url: string | null
           website: string | null
         }
