@@ -78,6 +78,7 @@ export default function Avatar({
           alt="Avatar"
           className="avatar image"
           style={{ height: size, width: size }}
+          width={size}
         />
       ) : (
         <div
